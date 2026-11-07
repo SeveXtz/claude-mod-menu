@@ -22,7 +22,7 @@ add_executable(ClaudeMenu WIN32
 
 target_include_directories(ClaudeMenu PRIVATE src ${imgui_SOURCE_DIR} ${imgui_SOURCE_DIR}/backends)
 target_compile_definitions(ClaudeMenu PRIVATE UNICODE _UNICODE NOMINMAX IMGUI_DEFINE_MATH_OPERATORS)
-target_link_libraries(ClaudeMenu PRIVATE d3d11 dxgi dwmapi)
+target_link_libraries(ClaudeMenu PRIVATE d3d11 dxgi d3dcompiler dwmapi)
 
 if(MSVC)
     target_compile_options(ClaudeMenu PRIVATE /utf-8)

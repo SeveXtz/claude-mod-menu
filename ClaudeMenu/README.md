@@ -2,7 +2,16 @@
 
 Menu externo em Dear ImGui + DirectX 11, tema escuro com as cores do Claude e o mascote em pixel art.
 
-## Compilar (Visual Studio 2022)
+## Compilar rápido
+
+Com o Visual Studio 2022 ou o Build Tools 2022 (C++) instalado, rode na pasta `ClaudeMenu`:
+
+```powershell
+.\build.ps1            # x64  -> build\x64\Release\ClaudeMenu.exe
+.\build.ps1 -Arch Win32  # para jogos 32-bit
+```
+
+## Compilar pelo Visual Studio 2022
 
 1. Instale o workload **"Desenvolvimento para desktop com C++"** (já vem com CMake).
 2. No Visual Studio: **Arquivo → Abrir → Pasta...** e escolha a pasta `ClaudeMenu`.

@@ -16,7 +16,7 @@ static IDXGISwapChain*         g_sc  = nullptr;
 static ID3D11RenderTargetView* g_rtv = nullptr;
 static UINT g_resizeW = 0, g_resizeH = 0;
 static constexpr int kHotkeyToggle = 1;
-static constexpr int kWinW = 600, kWinH = 440;
+static constexpr int kWinW = 600, kWinH = 520;
 
 static void CreateRenderTarget() {
     ID3D11Texture2D* back = nullptr;
